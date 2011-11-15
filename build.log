@@ -1,0 +1,32 @@
+Logfile initialized
+[INFO] logfile = /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/build.log
+[DEBUG] /Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/builder.py run /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample /Users/sanojimaru/workspace/android-sdk
+[INFO] Titanium SDK version: 1.7.5 (11/02/11 17:00 ab20af7)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.025917 seconds on emulator to get ready
+[DEBUG] com.gameraworks.photoviewersample installed? True
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Copying project resources..
+[TRACE] COPYING MODIFIED FILE: /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/Resources/home.js => /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/build/android/bin/assets/Resources/home.js
+[TRACE] COPYING MODIFIED FILE: /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/Resources/image.js => /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/build/android/bin/assets/Resources/image.js
+[INFO] Tiapp.xml unchanged, skipping class generation
+[DEBUG] Processing Android resource drawables
+[DEBUG] found drawable-long-land-hdpi splash screen at /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] found drawable-long-land-ldpi splash screen at /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] found drawable-long-port-hdpi splash screen at /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/Resources/android/images/res-long-port-hdpi/default.png
+[DEBUG] found drawable-long-port-ldpi splash screen at /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/Resources/android/images/res-notlong-port-hdpi/default.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at /Users/sanojimaru/workspace/TitaniumStudio/PhotoViewerSample/Resources/android/images/res-notlong-port-mdpi/default.png
+[INFO] Waiting for SDCard to become available..
+[INFO] Re-launching application ... PhotoViewerSample
+[INFO] Launching application ... PhotoViewerSample
+[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.gameraworks.photoviewersample/.PhotoviewersampleActivity }
+Warning: Activity not started, its current task has been brought to the front
+
+[INFO] Relaunched PhotoViewerSample ... Application should be running.
