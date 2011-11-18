@@ -1,37 +1,20 @@
-var file, filenames, imageView, scrollView, win;
+var container, file, filename, filenames, imageView, views, win, _i, _len;
 win = Ti.UI.currentWindow;
 filenames = Ti.Filesystem.getFile(Ti.App.imagesPath).getDirectoryListing();
 file = Ti.Filesystem.getFile(win.filename);
-imageView = Ti.UI.createImageView({
-  image: Ti.Filesystem.getFile(win.filename)
+views = [];
+for (_i = 0, _len = filenames.length; _i < _len; _i++) {
+  filename = filenames[_i];
+  imageView = Ti.UI.createImageView({
+    image: Ti.App.imagesPath + filename
+  });
+  views.push(imageView);
+}
+container = Ti.UI.createScrollableView({
+  views: views,
+  showPagingControl: true,
+  maxZoomScale: 3.0,
+  minZoomScale: 0.5,
+  currentPage: filenames.indexOf(file.name.replace('/', ''))
 });
-imageView.addEventListener('swipe', function(e) {
-  var imageWindow, index, next;
-  if ((index = filenames.indexOf(file.name())) > -1) {
-    switch (e.direction) {
-      case "left":
-        next = index - 1;
-        break;
-      case "right":
-        next = index + 1;
-        break;
-      default:
-        next = index;
-    }
-    if (filenames[next]) {
-      imageWindow = Ti.UI.createWindow({
-        url: 'image.js',
-        filename: Ti.App.imagesPath + filenames[next],
-        navBarHidden: true
-      });
-      return imageWindow.open({
-        fullscreen: true
-      });
-    } else {
-      return alert("Next image not found.");
-    }
-  }
-});
-scrollView = Ti.UI.createScrollView();
-scrollView.add(imageView);
-win.add(scrollView);
+win.add(container);

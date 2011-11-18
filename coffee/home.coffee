@@ -14,8 +14,8 @@ win.addEventListener('open', (e) ->
       image: Ti.App.imagesPath + filename,
       top: widthBase * rowCount,
       left: widthBase * cellCount,
-      width: widthBase - 5,
-      height: widthBase - 5
+      height: widthBase - 5,
+      width: widthBase - 5
     })
     thumb.addEventListener('click', (e) ->
       imageWindow = Ti.UI.createWindow({
