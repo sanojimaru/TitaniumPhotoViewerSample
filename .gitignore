@@ -1,4 +1,5 @@
 build
 tmp
-*.log
 .DS_Store
+*.lock
+*.log
